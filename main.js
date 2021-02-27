@@ -33,13 +33,13 @@ class BlitzComponent {
             }
         ];
         this.myType = 'PieChart';
-        this.elo = "";
     }
     ngOnInit() {
     }
     ngOnChanges() {
         this.start();
         this.pieChartData = [];
+        this.elo = "";
     }
     start() {
         let query = 'https://api.chess.com/pub/player/' + this.search;
@@ -135,15 +135,15 @@ class UserComponent {
             }
         ];
         this.myType = 'PieChart';
-        this.username = "";
-        this.name = "";
-        this.elo = "";
     }
     ngOnInit() {
     }
     ngOnChanges() {
         this.start();
         this.pieChartData = [];
+        this.username = "";
+        this.name = "";
+        this.elo = "";
     }
     start() {
         let query = 'https://api.chess.com/pub/player/' + this.search;
@@ -278,13 +278,13 @@ class BulletComponent {
             }
         ];
         this.myType = 'PieChart';
-        this.elo = "";
     }
     ngOnInit() {
     }
     ngOnChanges() {
         this.start();
         this.pieChartData = [];
+        this.elo = "";
     }
     start() {
         let query = 'https://api.chess.com/pub/player/' + this.search;
