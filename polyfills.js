@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Andrea\Desktop\CDCQuickStats\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\Users\Andrea\Desktop\Progetti Scolastici\CDCQuickStats\src\polyfills.ts */"hN/g");
 
 
 /***/ }),

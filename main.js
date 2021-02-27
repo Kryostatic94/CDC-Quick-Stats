@@ -96,7 +96,7 @@ BlitzComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Andrea\Desktop\CDCQuickStats\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\Andrea\Desktop\Progetti Scolastici\CDCQuickStats\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -796,6 +796,7 @@ function SearchComponent_app_blitz_6_Template(rf, ctx) { if (rf & 1) {
 const _c0 = function () { return ["/searchresult"]; };
 class SearchComponent {
     constructor() {
+        this.button = document.getElementById('btn');
         this.search = "";
     }
     ngOnInit() {
@@ -805,9 +806,11 @@ class SearchComponent {
     }
 }
 SearchComponent.ɵfac = function SearchComponent_Factory(t) { return new (t || SearchComponent)(); };
-SearchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SearchComponent, selectors: [["app-search"]], decls: 7, vars: 5, consts: [["id", "form", 1, "user-form"], ["type", "text", "id", "search", "placeholder", "Search a Chess.com User"], ["type", "button", 1, "btn", "btn-dark", 3, "routerLink", "click"], [1, "fas", "fa-search"], [3, "search", 4, "ngIf"], [3, "search"]], template: function SearchComponent_Template(rf, ctx) { if (rf & 1) {
+SearchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SearchComponent, selectors: [["app-search"]], decls: 7, vars: 5, consts: [["id", "form", 1, "user-form"], ["type", "text", "id", "search", "placeholder", "Search a Chess.com User", 3, "keydown.enter"], ["type", "button", "id", "btn", 1, "btn", "btn-dark", 3, "routerLink", "click"], [1, "fas", "fa-search"], [3, "search", 4, "ngIf"], [3, "search"]], template: function SearchComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("keydown.enter", function SearchComponent_Template_input_keydown_enter_1_listener($event) { return $event.preventDefault(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function SearchComponent_Template_button_click_2_listener() { return ctx.searchUser(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 3);
