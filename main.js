@@ -105,6 +105,7 @@ class BlitzComponent {
             }
             else {
                 this.elo = "No records available";
+                this.loading = true;
             }
         });
     }
@@ -270,6 +271,7 @@ class UserComponent {
             }
             else {
                 this.elo = "No records available";
+                this.loading = true;
             }
         });
     }
@@ -420,6 +422,7 @@ class BulletComponent {
             }
             else {
                 this.elo = "No records available";
+                this.loading = true;
             }
         });
     }
